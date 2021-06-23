@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Sen:wght@400&display=swap');
+
+body{
+    font-family: 'Sen', sans-serif;
+    overflow-x: hidden;
+    background-color: black;
+    color: white;
+}
+p{
+    text-align: justify;
+    padding-top: 20px ;
+}
+
+h1{
+    font-size: 80px;
+    line-height: 80px;
+}
+
+main > span{
+    color: rgba(255, 255, 255, 0.5);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+.light-grey{
+    color: #8491a0;
+}
+.bg-transparent {
+    height: 100vh;
+}
+.bg-transparent div:nth-child(1) {
+    background: black;
+}
+.bg-transparent div:nth-child(2) {
+    background: rgb(24, 24, 35);
+}
+
+.main{
+    top: 0;
+    position: absolute;
+    align-items: center;
+    height: 100%;
+    display: flex;
+}
+.head-text-left span{
+    font-size: 74px;
+    color: rgba(255, 235, 235, 0.5);
+}
+
+.head-text-left{
+    margin-left: -60px;
+   
+}
+
+.experience{
+    background-color: black;
+    align-items: center;
+    margin: auto;
+    padding: 8% 5%;
+}
+
+
+.works h1{
+    color: rgba(255, 255, 255, 0.5)
+}
+
+
+h2{
+    font-size: 58px;
+    font-weight: 700;
+
+}
+h3{
+    font-weight: 700;
+}
+
+.phy p{
+    text-align: left;
+    margin-left: 60px;
+   
+    margin-right: 20px;
+}
+
+.phy a{
+   margin-left: 0;
+   height: 50px;
+   border-radius: 4px;
+   color: #000;
+}
+
+.phy a:hover {
+    color: white;
+    background-color: #5221e6;
+   
+}
+
+.skillset{
+    color: white;
+}
+
+.works h5{
+    line-height: 1.2;
+    font-size: 24px;
+}
+
+/* work */
+
+.cardbody{
+    background-color: #333333;
+}
+.button-wrapper{
+    height: 250px;
+    width: 18rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 5%;
+}
+
+.button{
+    border: 1px solid #5221e6;
+    /* color: #5221e6; */
+    background-color: black;
+}
+
+a :hover{
+    background-color: #5221e6;
+ 
+}
+/* business */
+.input-bg{
+    background-color: #181823;
+}
+
+.form-inputs a{
+    background-color: #5221e6;
+}
+
+footer{
+    background-color: #181823;
+}
+.svg{
+    width: 25px;
+}
