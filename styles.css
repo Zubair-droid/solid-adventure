@@ -12,7 +12,7 @@ p{
 }
 
 h1{
-    font-size: 80px;
+    font-size: calc(80px + vh);
     line-height: 80px;
 }
 
@@ -27,6 +27,8 @@ main > span{
 .light-grey{
     color: #8491a0;
 }
+
+/* dummy div bg */
 .bg-transparent {
     height: 100vh;
 }
@@ -37,6 +39,10 @@ main > span{
     background: rgb(24, 24, 35);
 }
 
+
+
+
+/* main */
 .main{
     top: 0;
     position: absolute;
@@ -45,7 +51,7 @@ main > span{
     display: flex;
 }
 .head-text-left span{
-    font-size: 74px;
+    font-size: calc(74px + vh);
     color: rgba(255, 235, 235, 0.5);
 }
 
@@ -53,6 +59,39 @@ main > span{
     margin-left: -60px;
    
 }
+
+@media(min-width: 320px) and (max-width: 760px){
+    .main{
+        position: absolute;
+        background-color: #181823;
+        top:0;
+    }
+    .head-text-left{
+      
+        width: 60%;
+        margin-right: auto;
+        margin-left: 65px;
+        text-align: left;
+        justify-content: left;
+       
+    }
+    h1{ 
+       
+        margin-top: 20px;
+        line-height: 1.2;
+        
+    }
+    .hero-image{
+        top: 0;
+        background-color: none;
+    }
+}
+
+
+
+
+
+/* experience */
 
 .experience{
     background-color: black;
@@ -68,7 +107,7 @@ main > span{
 
 
 h2{
-    font-size: 58px;
+    font-size: calc(58px + vh);
     font-weight: 700;
 
 }
@@ -76,12 +115,9 @@ h3{
     font-weight: 700;
 }
 
-.phy p{
-    text-align: left;
-    margin-left: 60px;
-   
-    margin-right: 20px;
-}
+
+
+/* philosophy */
 
 .phy a{
    margin-left: 0;
@@ -96,6 +132,8 @@ h3{
    
 }
 
+
+/* skillset */
 .skillset{
     color: white;
 }
@@ -105,13 +143,22 @@ h3{
     font-size: 24px;
 }
 
-/* work */
+@media(min-width: 320px ){
+    .skill-head{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+
+/* projects worked */
 
 .cardbody{
     background-color: #333333;
 }
 .button-wrapper{
-    height: 250px;
+    height: 140px;
     width: 18rem;
     display: flex;
     align-items: center;
@@ -129,7 +176,9 @@ a :hover{
     background-color: #5221e6;
  
 }
-/* business */
+
+
+/* business  form*/
 .input-bg{
     background-color: #181823;
 }
@@ -138,9 +187,42 @@ a :hover{
     background-color: #5221e6;
 }
 
+
+/* footer */
 footer{
     background-color: #181823;
 }
 .svg{
     width: 25px;
+}
+.cta-i{
+    max-height: 15px;
+}
+
+@media(max-width: 576px){
+    .footer{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .cta-i{
+        max-height: 250px;
+    }
+    .navs{
+        justify-content: flex-start;
+    }
+}
+
+@media(min-width: 576px){
+    .footer{
+        display: flex;
+        flex-direction: row;
+       
+    }
+    .cta-i{
+        max-height: 27px;
+    }
+    .navs{
+        justify-content: space-evenly;
+    }
 }
