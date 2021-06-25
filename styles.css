@@ -7,7 +7,7 @@ body{
     color: white;
 }
 p{
-    text-align: justify;
+    text-align: start;
     padding-top: 20px ;
 }
 
@@ -128,7 +128,7 @@ h3{
 
 .phy a{
    margin-left: 0;
-   height: 50px;
+   
    border-radius: 4px;
    color: #000;
 }
@@ -136,7 +136,7 @@ h3{
 .phy a:hover {
     color: white;
     background-color: #5221e6;
-   
+    
 }
 
 
