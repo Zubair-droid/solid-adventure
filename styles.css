@@ -16,6 +16,11 @@ h1{
     line-height: 80px;
 }
 
+*{
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
 main > span{
     color: rgba(255, 255, 255, 0.5);
 }
@@ -24,6 +29,7 @@ main > span{
     margin: 0;
     padding: 0;
 }
+
 .light-grey{
     color: #8491a0;
 }
@@ -70,7 +76,7 @@ main > span{
       
         width: 60%;
         margin-right: auto;
-        margin-left: 65px;
+        margin-left: 55px;
         text-align: left;
         justify-content: left;
        
@@ -84,6 +90,7 @@ main > span{
     .hero-image{
         top: 0;
         background-color: none;
+      
     }
 }
 
@@ -97,7 +104,7 @@ main > span{
     background-color: black;
     align-items: center;
     margin: auto;
-    padding: 8% 5%;
+    padding: 8% 0;
 }
 
 
@@ -136,6 +143,7 @@ h3{
 /* skillset */
 .skillset{
     color: white;
+    padding: 8% 0;
 }
 
 .works h5{
