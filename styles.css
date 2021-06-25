@@ -185,6 +185,25 @@ a :hover{
  
 }
 
+/* social */
+@media(max-width: 670px) {
+     
+    .social-text{
+        margin-left: 10%;
+        max-width: 300px;
+    }
+   
+
+    .plane-img{
+       
+       
+        width: 100%;
+        height: 100%;
+        display: block;
+       
+    }
+}
+
 
 /* business  form*/
 .input-bg{
