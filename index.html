@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+       
+    
     <!-- Bootstrap JS -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
@@ -25,7 +27,8 @@
   <body>
     <!-- navbar -->
    
-    <nav class="navbar navbar-light ">
+   
+    <nav class="navbar navbar-dark text-tomato fixed-top navbar-expand-lg ps-2">
       
         <button
           class="navbar-toggler"
@@ -41,7 +44,7 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item px-2">
-              <a class="nav-link text-white active" aria-current="page" href="#"
+              <a class="nav-link text-white active" style="background-color: #5221e6;" aria-current="page" href="#"
                 >Experience</a
               >
             </li>
@@ -49,7 +52,7 @@
               <a class="nav-link text-white" href="#">Contact</a>
             </li>
             <li class="nav-item px-2">
-              <a class="nav-link text-white" href="#">Work</a>
+              <a class="nav-link text-white"  href="#">Work</a>
             </li>
           </ul>
         </div>
@@ -59,14 +62,14 @@
     <!-- main -->
     <section>
       <div class="d-flex flex-wrap bg-transparent">
-        <div class="col-lg-4 col-md-4"></div>
-        <div class="col-lg-8 col-md-8"></div>
+        <div class="col-4"></div>
+        <div class="col-8"></div>
       </div>
 
       <div class="main">
-        <div class="d-flex flex-wrap">
+        <div class="d-flex flex-wrap ">
           <div class="col-lg-6 col-md-6 col-sm-12">
-            <img src="./hero-image.jpg" alt="" style="max-width: 100%" />
+            <img class="hero-image" src="./hero-image.jpg" alt="" />
           </div>
 
           <div class="col-lg-6 col-md-6 col-sm-12 my-auto head-text-left">
@@ -354,28 +357,31 @@
         </div>
         
         <div class="col-lg-6 col-md-6 col-sm-12  form-inputs">
-           <form action="">
+          <form  onsubmit="return false;">
             <div class="mb-5">
-              <label for="exampleFormControlInput1" class="form-label">Name</label>
-              <input type="email" class="form-control input-bg border-0" id="exampleFormControlInput1" placeholder="">
+              <label for="exampleInputName" class="form-label">Name</label>
+              <input type="text"  class="form-control input-bg border-0" id="exampleInputName" placeholder="">
+              <span class="text-danger" id="name-error"></span>
             </div>
             <div class="mb-5">
-              <label for="exampleFormControlInput1" class="form-label">Email address</label>
-              <input type="email" class="form-control input-bg border-0" id="exampleFormControlInput1" placeholder="">
+              <label for="exampleEmail1" class="form-label">Email address</label>
+              <input type="email"   class="form-control input-bg border-0" id="exampleEmail1" placeholder="">
+              <span class="text-danger" id="email-error"></span>
             </div>
             <div class="mb-5">
-              <label for="exampleFormControlTextarea1" class="form-label">Message</label>
-              <textarea class="form-control input-bg border-0" id="exampleFormControlTextarea1" rows="3"></textarea>
+              <label for="messageTextArea" class="form-label">Message</label>
+              <textarea class="form-control input-bg border-0" id="messageTextArea" rows="3"></textarea>
+              <span class="text-danger" id="message-error"></span>
             </div>
             
-            <a href="" class="button w-100 btn px-3 py-4 text-white fw-bold">Lets Get Started</a>
+            <button type="submit" class="button w-100 btn px-3 py-4 text-white fw-bold"  id="form-submit"><strong>Lets Get Started</strong></button>
 
            </form>
 
         </div>
       </div>
     </section>
-
+    <script src="./script.js"></script>
     <footer >
       <section class="">
       <div class="ms-5 py-5  footer">
@@ -411,5 +417,6 @@
       </section>
       
     </footer>
+    
   </body>
 </html>
